@@ -9,7 +9,6 @@ r = 0
 
 for x in nums:
     l = len(lst)
-    print("회전 전 : ",lst)
     if lst.index(x) <= l//2:
         r = lst.index(x) * (-1)
     else:
@@ -21,9 +20,5 @@ for x in nums:
     lst.rotate(r)
     lst.popleft()
     lst = list(lst)
-    
-    print("회전 후 : ",lst)
-    print("r값 : ",r)
-    print()
 
 print(count)
