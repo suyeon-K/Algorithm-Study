@@ -16,6 +16,7 @@ def merge_sort(arr):
 
     merged_arr = []
     l = h = 0
+    
     while l < len(low_arr) and h < len(high_arr):
         if low_arr[l] < high_arr[h]:
             merged_arr.append(low_arr[l])
